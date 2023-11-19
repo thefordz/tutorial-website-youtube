@@ -16,7 +16,7 @@ export default function Home() {
       <button onClick={toggleModal} className='bg-black text-white px-5 py-4 rounded-full' type='button'>Open Modal</button>
       <AnimatePresence>
 
-      {openModal && <Modal toggleModal={toggleModal} width="100%" height="100%">
+      {openModal && <Modal toggleModal={toggleModal} style="w-full h-full">
         {/* content */}
         <div className="flex flex-col items-center justify-center">
           <span className="text-5xl">Content</span>
